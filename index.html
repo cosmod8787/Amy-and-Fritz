@@ -591,6 +591,71 @@
       text-align: center;
     }
 
+    /* ═══════════════════════════════
+       RESPONSIVE
+    ═══════════════════════════════ */
+    @media (max-width: 600px) {
+      #view-vorwort {
+        padding: 2rem 1.4rem;
+        gap: 1.2rem;
+      }
+
+      .vorwort-body {
+        font-size: clamp(1rem, 4.2vw, 1.2rem);
+        line-height: 1.75;
+      }
+
+      .vorwort-sub {
+        font-size: clamp(0.9rem, 3.8vw, 1.05rem);
+        line-height: 1.75;
+      }
+
+      /* badger: move above title instead of beside */
+      #view-home .home-hero > div[style*="position:relative"] {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #view-home .home-hero > div[style*="position:relative"] > div[style*="position:absolute"] {
+        position: static;
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        margin-bottom: 0.4rem;
+        justify-content: center;
+      }
+
+      .home-title {
+        font-size: clamp(2rem, 10vw, 3.5rem);
+      }
+
+      .home-message {
+        font-size: clamp(0.9rem, 4vw, 1.1rem);
+      }
+
+      .dest-card-name {
+        font-size: clamp(1rem, 4.5vw, 1.3rem);
+      }
+
+      .txt-section {
+        padding: 2rem 1.2rem;
+      }
+
+      .back-bar {
+        padding: 0.9rem 1rem;
+      }
+
+      .dest-header {
+        padding: 2.5rem 1rem 1.5rem;
+      }
+
+      .bra-grid {
+        gap: 0.4rem;
+        padding: 0 0.4rem;
+      }
+    }
+
     /* reveal */
     .reveal {
       opacity: 0;
